@@ -22,7 +22,9 @@ def setFilter():
     box = cropimage()
     ic = im.crop(box)
     data = np.array(ic)
-    r,g,b,_ = data.T[:5]
+    data_T = data.T
+    r,g,b = data_T[:3]
+    print data_T
     selectFilter = raw_input('which color should turn negative?\n')
     if all(c in 'rgb' for c in selectFilter):
         for i in range(0,len(selectFilter)):
