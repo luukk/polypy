@@ -8,6 +8,6 @@ Because somethimes you just want to add cool polygon filters to your images
 
 dependencies
 --------------
-* Python 2.x
+* Python 3.x
 * Pillow
 * numpy

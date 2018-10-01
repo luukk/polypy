@@ -25,7 +25,7 @@ def setFilter():
     data_T = data.T
     r,g,b = data_T[:3]
     print data_T
-    selectFilter = raw_input('which color should turn negative?\n')
+    selectFilter = raw_input('which color should turnt negative?\n')
     if all(c in 'rgb' for c in selectFilter):
         for i in range(0,len(selectFilter)):
             if(selectFilter[i] == 'r'):
